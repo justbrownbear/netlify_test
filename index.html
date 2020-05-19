@@ -9,5 +9,33 @@
 </head>
 <body>
 	<div><h1>Hello world</h1></div>
+
+	<div>
+		<h2>Displays the main Vuukle comment system</h2>
+		<div id='vuukle-comments'></div>
+
+		<h2>Displays the Emotes widget for the page</h2>
+		<div id='vuukle-emote'></div>
+
+		<h2>Displays the Newsfeed widget for the page</h2>
+		<div id='vuukle-newsfeed'></div>
+
+		<h2>Displays the social media share buttons. Can be included multiple times in a page.</h2>
+		<div class='vuukle-powerbar'></div>
+	</div>
+
+	<script>
+		var VUUKLE_CONFIG = {
+			apiKey: "38da30a6-ab1f-4127-9b8b-8fa9820999f2",
+			articleId: "someArticleId",
+		};
+		// ⛔️ DON'T EDIT BELOW THIS LINE
+		(function() {
+			var d = document,
+				s = d.createElement('script');
+			s.src = 'https://cdn.vuukle.com/platform.js';
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
 </body>
 </html>
